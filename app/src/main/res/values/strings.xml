@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">XDUIApp</string>
+    <string name="personal_account_title">我的账户</string>
+    <string name="personal_account_detail">明细</string>
+    <string name="personal_money_small">我的零钱（元）</string>
+    <string name="personal_money_withdraw">可提现金额（元）</string>
+    <string name="personal_money_freeze">冻结金额（元）</string>
+    <string name="personal_operation_recharge">充值</string>
+    <string name="personal_operation_withdraw">提现</string>
+    <string name="personal_proceeds_total">共累计收款</string>
+    <string name="personal_recharge_item_text">零钱：6.00</string>
+    <string name="personal_available_balance">可用余额</string>
+    <string name="personal_withdraw_num">提现金额</string>
+    <string name="personal_withdraw_all">全部提现</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="QQ钱包"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/middle_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect_yellow"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="T+0"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/micro_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rect_blue_kong"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="秒到账"
+                android:textColor="@color/color_blue"
+                android:textSize="@dimen/micro_text_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rect_green"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="可收他人卡"
+                android:textColor="@color/color_green"
+                android:textSize="@dimen/micro_text_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rect_blue02"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="无需提现"
+                android:textColor="@color/color_blue02"
+                android:textSize="@dimen/micro_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="额度：0-20000元/笔，当天结算最高10万元"
+            android:textColor="@color/color_gray"
+
+            android:textSize="@dimen/micro_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="费率：0.53%"
+            android:textColor="@color/color_yellow"
+            android:textSize="@dimen/micro_text_size" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="15dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/path_right" />
+</RelativeLayout>

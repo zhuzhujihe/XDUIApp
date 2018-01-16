@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/top_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/left_margin">
+
+        <ImageView
+            android:id="@+id/partner_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/myphoto" />
+
+        <TextView
+            android:id="@+id/partner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/partner_img"
+
+            android:text="账户名：金灿灿"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/top_text_size" />
+
+        <TextView
+            android:id="@+id/partner_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/partner_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/partner_img"
+
+            android:text="账号：121566161651"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/middle_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/left_margin"
+        android:paddingRight="@dimen/left_margin">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/shareman"
+                        android:drawablePadding="10dp"
+                        android:text="推荐人"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <Button
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/path_right" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="25dp"
+                        android:text="云付无卡聚..15917442247"
+                        android:textColor="@color/color_gray"
+                        android:textSize="@dimen/small_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/idcard"
+                        android:drawablePadding="10dp"
+                        android:text="实名认证"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <Button
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/path_right" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/face2face"
+                        android:drawablePadding="10dp"
+                        android:text="面对面直接注册"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <Button
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/path_right" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/maytax"
+                        android:drawablePadding="10dp"
+                        android:text="我的费率"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <Button
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/path_right" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="25dp"
+                        android:text="2张"
+                        android:textColor="@color/color_gray"
+                        android:textSize="@dimen/small_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/lookfor"
+                        android:drawablePadding="10dp"
+                        android:text="查看结算卡"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <Button
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/path_right" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/regist"
+                        android:drawablePadding="10dp"
+                        android:text="绑定刷卡机"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <Button
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/path_right" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="25dp"
+                        android:text="已绑定"
+                        android:textColor="@color/color_gray"
+                        android:textSize="@dimen/small_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/myserver"
+                        android:drawablePadding="10dp"
+                        android:text="我的客服"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <Button
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/path_right" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/more_"
+                        android:drawablePadding="10dp"
+                        android:text="更多设置"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <Button
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/path_right" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:background="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="更换结算卡"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/top_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/left_margin"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rect_gray_kong"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/iphone_" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_gray" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="null"
+                android:hint="请输入手机号" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/left_margin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect_gray_kong"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="40dp"
+                android:background="null"
+                android:paddingLeft="10dp"
+                android:hint="请输入验证码" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@drawable/switch_button_right_unchecked"
+                android:text="获取验证码"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/middle_text_size"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/left_margin"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rect_blue"
+            android:text="确认"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/middle_text_size" />
+    </LinearLayout>
+</LinearLayout>

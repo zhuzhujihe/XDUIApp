@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:background="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择通道"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/top_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/pay_detail_back"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/left_margin"
+            android:paddingRight="@dimen/left_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="交易类型：QQ钱包"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/micro_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="手续费：10.00"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/micro_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="交易金额：10000.00"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/micro_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="提现手续费：10.00"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/micro_text_size" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="40dp"
+                android:text="实际到账金额：60000"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/micro_text_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginTop="10dp"
+            android:text="请选择支付通道"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/micro_text_size" />
+
+        <android.support.v7.app.AlertController.RecycleListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/left_margin"
+            android:layout_marginTop="20dp"></android.support.v7.app.AlertController.RecycleListView>
+    </LinearLayout>
+</LinearLayout>

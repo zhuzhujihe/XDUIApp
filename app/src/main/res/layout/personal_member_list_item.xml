@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <ImageView
+        android:id="@+id/member_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/myphoto" />
+
+    <TextView
+        android:id="@+id/member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/member_img"
+        android:drawableLeft="@drawable/yuangong"
+        android:drawablePadding="5dp"
+        android:text="员工"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/middle_text_size" />
+
+    <TextView
+        android:id="@+id/member_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/member_img"
+        android:drawableLeft="@drawable/tel"
+        android:drawablePadding="5dp"
+        android:text="152****9413"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/middle_text_size" />
+
+    <TextView
+        android:id="@+id/member_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_tel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/member_img"
+        android:drawableLeft="@drawable/time"
+        android:drawablePadding="5dp"
+        android:text="2017-11-24 18:42:08"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/middle_text_size" />
+    <TextView
+        android:id="@+id/member_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_date"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/member_img"
+        android:drawableLeft="@drawable/ziliao"
+        android:drawablePadding="5dp"
+        android:text="资料未完善"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/middle_text_size" />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pay_detail_back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/orderno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:text="交易单号：23u43982374837873"
+        android:textColor="#ff707070"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/methed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="交易方式：无卡支付（信用卡）"
+        android:textColor="#ff707070"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="交易金额：￥2500"
+        android:textColor="#ff707070"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/shouxufee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="手续费：￥10.00"
+        android:textColor="#ff707070"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="92dp"
+        android:text="交易时间：2017-11-21 11：23：28"
+        android:textColor="#ffff8800"
+        android:textSize="12dp" />
+
+</LinearLayout>

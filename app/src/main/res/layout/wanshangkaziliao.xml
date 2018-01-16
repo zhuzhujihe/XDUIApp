@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F6"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2A76EE" >
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="12dp"
+            android:src="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="完尚卡信息"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="提示：请尽量完善卡片资料，方便对您卡片进行分类管理，如不暂 想完善，请直接点击保存进入卡片规划步骤"
+        android:textColor="#ffff8800"
+        android:textSize="10dp" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        >
+        
+        <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="卡号："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/cardno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="卡号"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="发卡行："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/bankname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="银行"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="持卡人姓名："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="姓名"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="安全码："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/anquanma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="123"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="预留手机号："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="手机号"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/zhangdanrilayout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="账单日："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/zhangdanri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请选择 账单日"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+         android:id="@+id/huankuanrilayout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="还款日："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/huankuanri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请选择 还款日"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/youxiaoqilayout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="卡有效期："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/youxiaoqi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请选择 月份/年份"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+         android:id="@+id/typelayout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="卡类型："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请选择 卡片的种类"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="卡初始额度："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/edu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="0"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="固定额度："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/gudingedu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入 固定额度"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="临时额度："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/linshiedu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入 临时额度"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="临时额度有效期："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/linshiyouxiaoqi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入 临时额度有效期"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="账单邮箱："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/youxiang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入 账单邮箱"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+      
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="持卡人电话："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入 持卡人电话"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+       
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="授权委托人电话："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/weituorenphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入 授权委托人电话"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+        
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="本期应还："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/benqiyinghuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入 本期应还"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+         
+          <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="持卡人证件号："
+            android:textColor="#ff000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/idno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入 持卡人证件号"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+       <TextView 
+            android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:background="#ff2a76ee"
+            android:text="保存" 
+		android:textColor="#ffffffff" 
+	android:textSize="11dp"
+	android:id="@+id/baocun"
+	android:layout_gravity="center"
+	android:gravity="center"
+	android:padding="10dp"
+            />
+    </LinearLayout>
+    </ScrollView>
+    
+ 
+
+</LinearLayout>

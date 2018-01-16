@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:background="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="刷卡支付"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/top_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pay_detail_back"
+            android:paddingLeft="@dimen/left_margin"
+            android:paddingRight="@dimen/left_margin">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="交易金额：10000.00"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/pay_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="刷卡支付"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/middle_text_size" />
+
+            <TextView
+                android:id="@+id/tv_service_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_money"
+                android:layout_marginTop="10dp"
+                android:text="手续费：10.00（500*20%）"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/pay_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/pay_mode"
+                android:layout_marginTop="20dp"
+                android:text="￥5089"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/middle_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_service_money02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_service_money"
+                android:layout_marginTop="10dp"
+                android:text="提现手续费：10.00（500*20%）"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/tv_real_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_service_money02"
+                android:layout_marginTop="40dp"
+                android:text="实际到账金额：60000"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/small_text_size" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/left_margin"
+            android:paddingRight="@dimen/left_margin">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="卡号："
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6225 4567 3388 1234"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/color_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/left_margin"
+            android:paddingRight="@dimen/left_margin">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="发卡行："
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="中国农业银行"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/color_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/left_margin"
+            android:paddingRight="@dimen/left_margin">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="持卡人姓名："
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="刘欧某"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/color_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/left_margin"
+            android:paddingRight="@dimen/left_margin">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="卡类型："
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="信用卡"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/left_margin"
+            android:layout_marginTop="10dp"
+            android:text="开通失败：失败原因失败原因失败原因失败原因失败原因失败原因失败原因失败原..."
+            android:textColor="@color/color_yellow"
+            android:textSize="@dimen/small_text_size" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/left_margin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rect_blue"
+            android:text="开通业务"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/middle_text_size" />
+    </LinearLayout>
+</LinearLayout>

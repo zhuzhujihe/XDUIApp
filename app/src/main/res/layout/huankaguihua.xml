@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F6"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2A76EE" >
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="12dp"
+            android:src="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="还卡规划"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#2A76EE"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rect_white" >
+
+            <ImageView
+                android:id="@+id/bankimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/boss" />
+
+            <TextView
+                android:id="@+id/bankname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/bankimg"
+                android:text="招商银行"
+                android:textColor="#ff707070"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/zhangdanri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="9dp"
+                android:text="账单日：13号"
+                android:textColor="#ff707070"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bankname"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/bankimg"
+                android:text="柳**"
+                android:textColor="#ff707070"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/huankuanri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/bankname"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="6dp"
+                android:text="还款日：13号"
+                android:textColor="#ff707070"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/cardno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/bankimg"
+                android:text="648666285495"
+                android:textColor="#ff707070"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/yihuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bankimg"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="26dp"
+                android:paddingBottom="12dp"
+                android:text="已还：30000"
+                android:textColor="#ff707070"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/weihuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bankimg"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="26dp"
+                android:layout_centerHorizontal="true"
+                
+                android:paddingBottom="12dp"
+                android:text="未还：30000"
+                android:textColor="#ff707070"
+                android:textSize="9dp" />
+            
+            <TextView
+                android:id="@+id/daoqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bankimg"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="26dp"
+                android:layout_alignParentRight="true"
+                
+                android:paddingBottom="12dp"
+                android:text="8天后到期"
+                android:textColor="#ff707070"
+                android:textSize="9dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/alllayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+    
+            android:layout_weight="1"
+   >
+
+        
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    
+                android:text="全部" 
+                android:layout_centerInParent="true"
+				android:textColor="#ff000000" 
+				android:id="@+id/alltext"
+				android:textSize="10dp"/>
+            
+            <LinearLayout
+            android:id="@+id/allxian"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#ff2a76ee"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:text="asd"
+            android:textColor="#ff2a76ee"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:id="@+id/yizhixinglayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+    
+            android:layout_weight="1"
+   >
+
+        
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    
+                android:text="已执行" 
+                android:layout_centerInParent="true"
+				android:textColor="#ffc0c0c0" 
+				android:id="@+id/yizhixingtext"
+				android:textSize="10dp"/>
+            
+             <LinearLayout
+            android:id="@+id/yizhixingxian"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#ff2a76ee"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:text="asd"
+            android:textColor="#ff2a76ee"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:id="@+id/weizhixinglayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+    
+            android:layout_weight="1"
+   >
+
+        
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    
+                android:text="未执行" 
+                android:layout_centerInParent="true"
+				android:textColor="#ffc0c0c0" 
+				android:id="@+id/weizhixingtext"
+				android:textSize="10dp"/>
+            
+             <LinearLayout
+            android:id="@+id/weizhixingxian"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#ff2a76ee"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:text="asd"
+            android:textColor="#ff2a76ee"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+
+        
+    </LinearLayout>
+    
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+          
+
+            <TextView
+                android:id="@+id/reguihua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#ff2a76ee"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="重新规划"
+                android:layout_alignParentBottom="true"
+                android:textColor="#ffffffff"
+                android:textSize="11dp" />
+            
+              <ExpandableListView
+                android:id="@+id/expendlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:childDivider="@null"
+                android:layout_above="@id/reguihua"
+                android:divider="@null" >
+            </ExpandableListView>
+        </RelativeLayout>
+
+    
+    
+</LinearLayout>

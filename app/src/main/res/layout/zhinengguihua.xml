@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F6"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2A76EE" >
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="12dp"
+            android:src="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="智能规划"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rect_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:text="招商银行 刘** / 6225****1234"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/zhangdanri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="账单日：13号"
+                android:textColor="#ff7e7e7e"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/huankuanri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="还款日：02号"
+                android:textColor="#ff7e7e7e"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yihuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="已还：3000"
+                android:textColor="#ff7e7e7e"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/weihuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="剩余未还：30000"
+                android:textColor="#ff7e7e7e"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/daoqi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="8天后到期"
+                android:textColor="#F68D06"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ScrollView 
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout 
+            
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+            >
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/jihualistview"
+        
+        ></ListView>
+   
+    
+    <LinearLayout 
+            
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_white"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:id="@+id/addnewcard"
+    android:orientation="horizontal"
+            >
+             <ImageView 
+                 android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                 android:src="@drawable/addblue"
+                 android:layout_marginRight="3dp"
+                 />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="增加还款"
+            android:layout_marginLeft="3dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="12dp"
+            android:textColor="#2A76EE"
+            />
+        </LinearLayout>
+        
+    
+     <TextView 
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交计划"
+            android:layout_marginLeft="3dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rect_blue"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:id="@+id/tijiaojihua"
+            android:textColor="#ffffffff"
+        />
+    
+    </LinearLayout>
+    
+        
+   
+    
+ </ScrollView>
+</LinearLayout>

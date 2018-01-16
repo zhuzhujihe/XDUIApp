@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2A76EE" >
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="12dp"
+            android:src="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账单明细"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/alllayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+    
+            android:layout_weight="1"
+   >
+
+        
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    
+                android:text="全部" 
+                android:layout_centerInParent="true"
+				android:textColor="#ff000000" 
+				android:id="@+id/alltext"
+				android:textSize="10dp"/>
+            
+            <LinearLayout
+            android:id="@+id/allxian"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#ff2a76ee"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:text="asd"
+            android:textColor="#ff2a76ee"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:id="@+id/yizhixinglayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+    
+            android:layout_weight="1"
+   >
+
+        
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    
+                android:text="已执行" 
+                android:layout_centerInParent="true"
+				android:textColor="#ffc0c0c0" 
+				android:id="@+id/yizhixingtext"
+				android:textSize="10dp"/>
+            
+             <LinearLayout
+            android:id="@+id/yizhixingxian"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#ff2a76ee"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:text="asd"
+            android:textColor="#ff2a76ee"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:id="@+id/weizhixinglayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+    
+            android:layout_weight="1"
+   >
+
+        
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    
+                android:text="未执行" 
+                android:layout_centerInParent="true"
+				android:textColor="#ffc0c0c0" 
+				android:id="@+id/weizhixingtext"
+				android:textSize="10dp"/>
+            
+             <LinearLayout
+            android:id="@+id/weizhixingxian"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#ff2a76ee"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:text="asd"
+            android:textColor="#ff2a76ee"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+
+        
+    </LinearLayout>
+    
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+          
+            
+              <ExpandableListView
+                android:id="@+id/expendlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:childDivider="@null"
+                android:layout_above="@id/reguihua"
+                android:divider="@null" >
+            </ExpandableListView>
+        </RelativeLayout>
+    
+    
+
+</LinearLayout>

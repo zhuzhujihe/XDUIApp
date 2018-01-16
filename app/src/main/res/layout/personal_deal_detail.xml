@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:background="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="交易详情"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/top_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pay_detail_back"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/left_margin"
+        android:paddingRight="@dimen/left_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="交易单号: 756sjkbhdfs9239"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/middle_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="交易方式：无卡支付（信用卡）"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/middle_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="交易金额：￥1651.00"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/middle_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="手续费：￥25.00"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/middle_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="交易时间：2017-11-24 11：25：32"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/middle_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="实际到账金额：￥60000"
+            android:textColor="@color/color_yellow"
+            android:textSize="@dimen/middle_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="出款失败"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/middle_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/left_margin"
+        android:paddingRight="@dimen/left_margin"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="出款失败原因：是不是原生的康复老师打开了烦恼三大烦恼伦敦峰会南方了"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/middle_text_size" />
+
+    </LinearLayout>
+</LinearLayout>

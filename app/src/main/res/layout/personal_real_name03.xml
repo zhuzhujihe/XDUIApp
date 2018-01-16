@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:background="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="实名认证"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/top_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg"
+        android:orientation="vertical"
+
+        android:paddingTop="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_blue"
+                        android:gravity="center"
+                        android:text="身份证认证"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_blue"
+                        android:gravity="center"
+                        android:text="银行卡认证"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_blue"
+                        android:gravity="center"
+                        android:text="安全支付认证"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/middle_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_white"
+                    android:paddingLeft="@dimen/left_margin"
+                    android:paddingRight="@dimen/left_margin"
+                    android:paddingBottom="40dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="脸部识别"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="1.使用刷脸认证必须安装支付宝APP"
+                        android:textColor="@color/color_gray"
+                        android:textSize="@dimen/small_text_size"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="2.必须通过金灿灿本人的支付宝账户验证"
+                        android:textColor="@color/color_gray"
+                        android:textSize="@dimen/small_text_size"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="3.刷脸认证能有效提高审核速度和通过率，更有效保障您的账户安全"
+                        android:textColor="@color/color_gray"
+                        android:textSize="@dimen/small_text_size"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="4.是由蚂蚁金服提供的安全认证方式"
+                        android:textColor="@color/color_gray"
+                        android:textSize="@dimen/small_text_size"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginRight="@dimen/left_margin"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rect_blue"
+                    android:text="开始刷脸"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/middle_text_size" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

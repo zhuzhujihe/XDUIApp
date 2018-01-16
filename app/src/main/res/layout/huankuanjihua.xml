@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F6"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2A76EE" >
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="12dp"
+            android:src="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="还卡计划"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rect_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:text="招商银行 刘** / 6225****1234"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/zhangdanri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="账单日：13号"
+                android:textColor="#ff7e7e7e"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/huankuanri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="还款日：02号"
+                android:textColor="#ff7e7e7e"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yihuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="已还：3000"
+                android:textColor="#ff7e7e7e"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/weihuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="剩余未还：30000"
+                android:textColor="#ff7e7e7e"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/daoqi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="8天后到期"
+                android:textColor="#F68D06"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffdeeafb"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/youhui1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="优惠券会员手续费：0.9+1元"
+                android:textColor="#ffff8800"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/youhui2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="优惠券会员手续费：0.9+1元"
+                android:textColor="#ffff8800"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:text="成为优惠券用户即可 降低手续费又可赚取 分润差价"
+            android:textColor="#ffff8800"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还款总金额"
+                android:textColor="#ff181818"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（需要生成计划的总金额）"
+                android:textColor="#C0C0C0"
+                android:textSize="10dp" />
+        </LinearLayout>
+        
+        <TextView 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content" 
+android:id="@+id/zongjine"
+android:layout_marginTop="20dp"
+android:layout_marginLeft="10dp"
+android:text="￥3000" 
+android:textColor="#ff181818" 
+android:textSize="20dp"
+
+/>
+        
+        
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="启动金额"
+                android:textColor="#ff181818"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（保证金+手续费）"
+                android:textColor="#C0C0C0"
+                android:textSize="10dp" />
+        </LinearLayout>
+        
+           
+           
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="#ff181818"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（保证金+手续费）"
+                android:id="@+id/qidongzijin"
+                android:textColor="#C0C0C0"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:textSize="20dp" />
+        </LinearLayout>
+        
+                <TextView 
+                     android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content" 
+android:text="账户余额：0.00元" 
+android:textColor="#ffff8800" 
+android:textSize="10dp"
+/>
+                
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+                
+                <TextView
+                    android:id="@+id/zhinengguigua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rect_blue_kong"
+                    android:gravity="center"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="智能规划"
+                    android:textColor="#ff2a76ee"
+                    android:textSize="10dp" />
+                
+                                <TextView 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content" 
+android:layout_gravity="center"
+android:gravity="center"
+android:layout_weight="1"
+android:background="@drawable/rect_yellow"
+android:text="手动规划" 
+android:id="@+id/shoudongguigua"
+android:textColor="#ffff8800" 
+android:textSize="10dp"
+android:layout_marginLeft="12dp"
+android:layout_marginRight="18dp"
+android:paddingTop="6dp"
+android:paddingBottom="6dp"
+/>
+            </LinearLayout>  
+            
+            
+            <TextView 
+android:layout_width="match_parent" 
+android:layout_height="wrap_content" 
+android:text="智能规划：系统自动生成规划方案" 
+android:textColor="#ffc0c0c0" 
+android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+android:textSize="8dp"
+/>
+            
+                        <TextView 
+android:layout_width="match_parent" 
+android:layout_height="wrap_content" 
+android:text="手动规划：需用户手动设计规划方案" 
+android:textColor="#ffc0c0c0" 
+android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+android:textSize="8dp"
+android:layout_marginBottom="8dp" 
+/>
+                
+    </LinearLayout>
+    
+    </ScrollView>
+
+</LinearLayout>

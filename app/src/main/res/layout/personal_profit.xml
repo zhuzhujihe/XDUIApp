@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:background="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="分润"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/top_text_size" />
+
+        <TextView
+            android:id="@+id/text_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/left_margin"
+            android:text="收益明细"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/right_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/profit_yesterday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="0.00"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/top_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profit_yesterday"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/top_margin"
+                android:text="昨日收益（元）"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/small_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/color_white" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/profit_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="0.00"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/top_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profit_today"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/top_margin"
+                android:text="今日收益（元）"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/small_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_blue">
+
+        <LinearLayout
+            android:id="@+id/profit_view1"
+            android:layout_width="@dimen/left_margin"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_white" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/profit_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/profit_view3"
+            android:layout_toRightOf="@+id/profit_view1"
+            android:background="@drawable/rect_white">
+
+            <LinearLayout
+                android:id="@+id/profit_tab_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:gravity="center"
+                    android:text="交易分润"
+                    android:textColor="@color/color_blue"
+                    android:textSize="@dimen/big_text_size" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="升级分润"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/big_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/profit_tab_view"
+                android:background="@color/color_gray" />
+
+            <LinearLayout
+                android:id="@+id/profit_inner_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/profit_tab_view"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@color/color_blue"
+                    android:textSize="@dimen/big_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前可提现分润"
+                    android:textColor="@color/color_blue"
+                    android:textSize="@dimen/big_text_size" />
+            </LinearLayout>
+
+            <TextView
+               android:id="@+id/profit_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profit_inner_view"
+                android:layout_centerHorizontal="true"
+                android:text="单位（元）"
+                android:textColor="@color/color_blue"
+                android:textSize="@dimen/big_text_size" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/profit_unit"
+                android:background="@drawable/rect_yellow"
+                android:text="我要结算"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/middle_text_size"
+
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/profit_view3"
+            android:layout_width="@dimen/left_margin"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_white" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sum_money">
+
+            <TextView
+                android:id="@+id/text_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text_total_detail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:text="0.00"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/middle_text_size" />
+
+            <TextView
+                android:id="@+id/text_total_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:text="交易分润"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/middle_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

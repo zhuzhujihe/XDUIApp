@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:background="@drawable/path_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我要优惠"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/top_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/left_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/pay_list"
+                        android:drawablePadding="10dp"
+                        android:text="手续费列表"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <Button
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/path_right" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+
+                    <ImageView
+                        android:id="@+id/member_img"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/man" />
+
+                    <TextView
+                        android:id="@+id/member_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/member_img"
+                        android:drawableLeft="@drawable/user"
+                        android:drawablePadding="5dp"
+                        android:text="店长"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/top_text_size" />
+
+                    <TextView
+                        android:id="@+id/member_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/member_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/member_img"
+                        android:drawableLeft="@drawable/yaoqing"
+                        android:drawablePadding="5dp"
+                        android:text="邀请5人开通并实名认证通过"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/member_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/member_tel"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/member_img"
+                        android:drawableLeft="@drawable/sum"
+                        android:drawablePadding="5dp"
+                        android:text="累计收入金额达到30万"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/member_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/member_date"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/member_img"
+                        android:drawableLeft="@drawable/pay_mashang"
+                        android:drawablePadding="5dp"
+                        android:text="直接购买升级(￥188元)"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/rect_yellow"
+                        android:text="购买"
+                        android:textColor="@color/color_yellow"
+                        android:textSize="@dimen/middle_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+
+                    <ImageView
+                        android:id="@+id/boss_img"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/boss" />
+
+                    <TextView
+                        android:id="@+id/boss_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/boss_img"
+                        android:drawableLeft="@drawable/user"
+                        android:drawablePadding="5dp"
+                        android:text="老板"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/top_text_size" />
+
+                    <TextView
+                        android:id="@+id/boss_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/boss_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/boss_img"
+                        android:drawableLeft="@drawable/yaoqing"
+                        android:drawablePadding="5dp"
+                        android:text="邀请15人开通并实名认证通过"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/boss_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/boss_tel"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/boss_img"
+                        android:drawableLeft="@drawable/sum"
+                        android:drawablePadding="5dp"
+                        android:text="累计收入金额达到60万"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/boss_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/boss_date"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/boss_img"
+                        android:drawableLeft="@drawable/pay_mashang"
+                        android:drawablePadding="5dp"
+                        android:text="直接购买升级(￥388元)"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/rect_yellow"
+                        android:text="购买"
+                        android:textColor="@color/color_yellow"
+                        android:textSize="@dimen/middle_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/partner_img"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/conpany" />
+
+                    <TextView
+                        android:id="@+id/partner_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_toRightOf="@+id/partner_img"
+                        android:drawableLeft="@drawable/uses_"
+                        android:drawablePadding="5dp"
+                        android:text="合伙人方案"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/top_text_size" />
+
+                    <TextView
+                        android:id="@+id/partner_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/partner_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/partner_img"
+                        android:drawableLeft="@drawable/zixun"
+                        android:drawablePadding="5dp"
+                        android:text="请在线咨询客服"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/middle_text_size" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
